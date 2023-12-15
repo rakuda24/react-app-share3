@@ -45,7 +45,7 @@ const ImageUploader = () => {
       const url = await getDownloadURL(storageRef);
       setDownloadURL(url);
 
-      const docRef = await addDoc(collection(firestore, "messages4"), {
+      const docRef = await addDoc(collection(firestore, "messages3"), {
         name: "写真共有",
         message: url,
         photoURL: "/images/profile_placeholder.png",
